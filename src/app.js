@@ -13,5 +13,4 @@ app.use('/services', servicesRouter);
 app.get('/', (req, res) => res.status(200).json({ message: 'Olá Mundo!' }));
 app.get('/teste', (req, res) => res.status(200).json({ message: 'Testando...' }));
 
-
 module.exports = app;
