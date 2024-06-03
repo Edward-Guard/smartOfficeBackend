@@ -13,10 +13,11 @@ services:
       - 3001:3001
     environment:
       MYSQL_USER: root
-      MYSQL_PASSWORD: root
-      MYSQL_HOST: database
-      MYSQL_PORT: 3306
-      MYSQL_DATABASE: deskManager
+      MYSQL_PASSWORD: cktfCfcHGJdoupomcccNxCbohzEWeFEg
+      MYSQL_HOST: viaduct.proxy.rlwy.net
+      MYSQL_PORT: 33429
+      MYSQL_DATABASE: railway
+
     depends_on:
       database:
         condition: service_healthy   
@@ -33,4 +34,4 @@ services:
       timeout: 10s
       retries: 5
     ports:
-      - "33060:3306"
+      - "33061:3306"
